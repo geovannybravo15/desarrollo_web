@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo de Aplicaciones Web - UTM</title>
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado con navegación principal -->
+  <header class="encabezado">
+    <div class="contenedor encabezado-contenido">
+      <div class="logotipo">
+        <span class="institucion">UTM</span>
+        <span class="materia">Desarrollo Web</span>
+      </div>
+      <nav class="navegacion">
+        <ul class="menu-navegacion">
+          <li><a href="#inicio" class="enlace-menu">Inicio</a></li>
+          <li><a href="#temas" class="enlace-menu">Temas</a></li>
+          <li><a href="#contacto" class="enlace-menu">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero / Portada -->
+  <section id="inicio" class="seccion-hero">
+    <div class="contenedor hero-contenido">
+      <span class="etiqueta-facultad">Universidad Técnica de Manabí</span>
+      <h1 class="titulo-hero">Desarrollo de Aplicaciones Web</h1>
+      <p class="descripcion-hero">Construyendo los cimientos del software moderno para la web.</p>
+      <a href="#temas" class="boton boton-primario">Ver temas</a>
+    </div>
+  </section>
+
+  <!-- Sección de Temas del Curso -->
+  <section id="temas" class="seccion-temas">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Contenido del Curso</h2>
+      <p class="subtitulo-seccion">Módulos prácticos para aprender las bases del desarrollo web estándar.</p>
+      
+      <div class="rejilla-tarjetas">
+        <article class="tarjeta-tema">
+          <div class="icono-tema">&lt;/&gt;</div>
+          <h3 class="titulo-tema">HTML</h3>
+          <p class="descripcion-tema">Estructuración semántica y accesible del contenido en páginas web.</p>
+        </article>
+
+        <article class="tarjeta-tema">
+          <div class="icono-tema">🎨</div>
+          <h3 class="titulo-tema">CSS</h3>
+          <p class="descripcion-tema">Diseño visual, maquetación flexible con Flexbox/Grid y adaptabilidad móvil.</p>
+        </article>
+
+        <article class="tarjeta-tema">
+          <div class="icono-tema">⚡</div>
+          <h3 class="titulo-tema">JavaScript</h3>
+          <p class="descripcion-tema">Manipulación dinámica del DOM y lógica interactiva en el navegador.</p>
+        </article>
+
+        <article class="tarjeta-tema">
+          <div class="icono-tema">🌿</div>
+          <h3 class="titulo-tema">Git</h3>
+          <p class="descripcion-tema">Control de versiones colaborativo y buenas prácticas de despliegue.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="seccion-contacto">
+    <div class="contenedor contenedor-contacto">
+      <h2 class="titulo-seccion">Contacto del Curso</h2>
+      <p class="subtitulo-seccion">Envía tus consultas académicas al docente o coordinador.</p>
+
+      <!-- Mensaje de estado para retroalimentación al usuario -->
+      <div id="mensaje-estado" class="mensaje-estado" aria-live="polite"></div>
+
+      <form id="formulario-contacto" class="formulario-contacto" novalidate>
+        <div class="campo-grupo">
+          <label for="nombre" class="etiqueta-formulario">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" class="entrada-formulario" placeholder="Ej. Juan Pérez">
+        </div>
+
+        <div class="campo-grupo">
+          <label for="correo" class="etiqueta-formulario">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" class="entrada-formulario" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="campo-grupo">
+          <label for="mensaje" class="etiqueta-formulario">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" class="entrada-formulario" placeholder="Escribe tu consulta aquí..."></textarea>
+        </div>
+
+        <button type="submit" class="boton boton-formulario">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor pie-contenido">
+      <p>&copy; <span id="anio-actual"></span> Universidad Técnica de Manabí. Todos los derechos reservados.</p>
+      <p class="version-despliegue">Versión: 1.0</p>
+    </div>
+  </footer>
+
+  <!-- Archivo JavaScript para interacción y validaciones -->
+  <script src="script.js"></script>
+</body>
+</html>
